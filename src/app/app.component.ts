@@ -31,7 +31,7 @@ export class AppComponent {
       "logo": "https://redgirraffe.com/assets/images/RGVector.svg",
       "fee": 0.39,
       "GST": 18,
-      "RentalDocs": 8333.33
+      "RentalDocs": 50000
     },
     {
       "id": 2,
@@ -84,6 +84,15 @@ export class AppComponent {
       "slug": "freecharge",
       "logo": "https://pwa-cdn.freecharge.in/pwa-static/pwa/images/header/fc-logo-rebranded.png",
       "fee": 1.15,
+      "GST": 18,
+      "RentalDocs": 50000
+    },
+    {
+      "id": 8,
+      "name": "Mobikwik",
+      "slug": "mobikwik",
+      "logo": "https://www.mobikwik.com/blog/wp-content/uploads/2021/07/Mobikwik-blog-logo-312-x-70-1.png",
+      "fee": 2,
       "GST": 18,
       "RentalDocs": 50000
     },
