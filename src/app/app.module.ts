@@ -7,11 +7,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MaterialModule } from './material.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {DetailedChargesDialogComponent} from './components/detailed-charges-dialog/detailed-charges-dialog.component';
+
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DetailedChargesDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -20,9 +23,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MaterialModule,
     FormsModule,
     ReactiveFormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    
+  ],
+  exports: [
+    // MatDialogModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [ AppComponent]
 })
 export class AppModule { }

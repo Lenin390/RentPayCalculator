@@ -103,16 +103,20 @@
               </div>
               <div>
                 <h3><span>₹</span>{{Rentamount + ((Rentamount) * (site.fee/100)) + ((Rentamount) * (site.fee/100)* (site.GST/100))}}</h3>
-                <span (click)="dialog.open(detailedcharges)"><mat-icon >keyboard_arrow_down</mat-icon></span>
-                <ng-template #detailedcharges>
-                  <h4>{{'Convenience fee of ₹' + ((Rentamount) * (site.fee/100)) + ((Rentamount) * (site.fee/100)* (site.GST/100)) + 'inclusive of GST will be charged for this Rent Amount' }}</h4>
+                <span (click)="openDialog(Rentamount,site.fee,site.GST)"><mat-icon >keyboard_arrow_down</mat-icon></span>
+                <!-- <ng-template #detailedcharges>
+                  <h4>{{'Convenience fee of ₹' + (((Rentamount) * (site.fee/100)) + ((Rentamount) * (site.fee/100)* (site.GST/100))) + 'inclusive of GST will be charged for this Rent Amount' }}</h4>
                   <div class="prc-box prc-tbl--fullcards ">
                     <div>Base amount: {{Rentamount}}</div>
                     <div>Convenience fee : {{(Rentamount) * (site.fee/100)}}</div>
                     <div>GST: {{(Rentamount) * (site.fee/100)* (site.GST/100)}}</div>
                     <div><strong>Total Payable Amount: {{Rentamount + ((Rentamount) * (site.fee/100)) + ((Rentamount) * (site.fee/100)* (site.GST/100))}}</strong></div>
                   </div>
-                </ng-template>
+                </ng-template> -->
+              </div>
+              <div>
+                <h5>Rental aggrement Required: <strong>{{(Rentamount > site.RentalDocs) ?'YES' : 'NO'}}</strong></h5>
+                
               </div>
             </div>
           </div>

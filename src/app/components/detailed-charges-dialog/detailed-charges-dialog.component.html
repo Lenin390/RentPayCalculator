@@ -1,0 +1,14 @@
+<mat-icon mat-button (click)="dialogRef.close()">close</mat-icon>
+<h1 mat-dialog-title>{{'Convenience fee of ₹' + (fee_gst) + ' inclusive of GST will be charged for this Rent Amount' }}</h1>
+<div mat-dialog-content>
+    <div class="prc-box prc-tbl--fullcards ">
+    <div>Base amount: {{baseamont}}</div>
+    <div>Convenience fee : {{fee}}</div>
+    <div>GST: {{gst}}</div>
+    <div><strong>Total Payable Amount: {{baseamont + fee +gst}}</strong></div>
+  </div>
+</div>
+<div mat-dialog-actions>
+    <button mat-button mat-dialog-close 
+               cdkFocusInitial>Ok</button>
+  </div>
