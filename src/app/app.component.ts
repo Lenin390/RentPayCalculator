@@ -47,7 +47,7 @@ export class AppComponent {
       "name": "CRED",
       "slug": "cred",
       "logo": "https://web-images.credcdn.in/_next/assets/images/home-page/cred-logo-horizontal.png",
-      "fee": 15.5,
+      "fee": 1.55,
       "GST": 18,
       "RentalDocs": 8333.33
     },
