@@ -54,7 +54,7 @@
             <div class="prc-tbl__row-wrpr">
               <div class="width-30">
                 <img alt={{site.slug}} title={{site.name}} [src]="site.logo" decoding="async" data-nimg="true"
-                  class="img" (click)="testURL(site.name)" [ngClass]="site.name==='CRED' ? 'bg-black img' : 'img'">
+                  class="img" [ngClass]="site.name==='CRED' ? 'bg-black img' : 'img'">
               </div>
               <div class="width-20">
                 <div><h3>₹{{Rentamount + ((Rentamount) * (site.fee/100)) + ((Rentamount) * (site.fee/100)*
@@ -62,12 +62,17 @@
                 <span (click)="openDialog(Rentamount,site.fee,site.GST)" class="col-blue">Details<mat-icon style="padding-top: 8px;">keyboard_arrow_down</mat-icon></span></div>
                
               </div>
-              <div class="width-40 d-flex">
-                <button style="width: 80%;" value={{site.link}} >{{site.name}} : </button>
-              </div>
               <div class="width-20 d-flex">
                 <h5 style="width: 80%;">Rental Aggrement Required:
                   <strong>{{(Rentamount > site.RentalDocs) ?'YES' : 'NO'}}</strong> </h5>
+              </div>
+              
+              <div>
+                <button mat-button="" type="button" id="calculator-charges-button"
+                  class="mat-focus-indicator buttonClass button-stepper-next mat-button mat-button-base"
+                  (click)="OpenSiteURL(site.link)">
+                  <span class="mat-button-wrapper">PAY</span>
+                </button>
               </div>
             </div>
           </div>

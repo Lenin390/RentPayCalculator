@@ -359,6 +359,7 @@
     width: 50%;
     aspect-ratio: 3/2;
     object-fit: contain;
+    border: 2px solid;
 }
 
 .width-20 {
@@ -387,5 +388,10 @@
     /* height: 73px; */
     aspect-ratio: 3/2;
     object-fit: contain;
+    border: 2px solid;
+    }
+    .col-blue {
+        color: blue;
+        display: inline-flex;
     }
     }

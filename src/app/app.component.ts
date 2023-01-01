@@ -34,7 +34,7 @@ export class AppComponent {
       "fee": 0.39,
       "GST": 18,
       "RentalDocs": 50000,
-      "link": "https://play.google.com/store/apps/details?id=com.dreamplug.androidapp&pli=1"
+      "link": "https://redgirraffe.com/"
     },
     {
       "id": 2,
@@ -44,7 +44,7 @@ export class AppComponent {
       "fee": 1,
       "GST": 18,
       "RentalDocs": 50000,
-      "link": "https://play.google.com/store/apps/details?id=com.dreamplug.androidapp&pli=1"
+      "link": "https://play.google.com/store/apps/details?id=com.nobroker.app&gl=US"
     },
     {
       "id": 3,
@@ -64,7 +64,7 @@ export class AppComponent {
       "fee": 0,
       "GST": 18,
       "RentalDocs": 50000,
-      "link": "https://play.google.com/store/apps/details?id=com.dreamplug.androidapp&pli=1"
+      "link": "https://play.google.com/store/apps/details?id=com.timesgroup.magicbricks"
     },
     {
       "id": 5,
@@ -74,7 +74,7 @@ export class AppComponent {
       "fee": 1.75,
       "GST": 18,
       "RentalDocs": 50000,
-      "link": "https://play.google.com/store/apps/details?id=com.dreamplug.androidapp&pli=1"
+      "link": "https://play.google.com/store/apps/details?id=net.one97.paytm"
     },
     {
       "id": 6,
@@ -84,7 +84,7 @@ export class AppComponent {
       "fee": 1.70,
       "GST": 18,
       "RentalDocs": 50000,
-      "link": "https://play.google.com/store/apps/details?id=com.dreamplug.androidapp&pli=1"
+      "link": "https://play.google.com/store/apps/details?id=com.phonepe.app"
     },
     {
       "id": 7,
@@ -94,7 +94,7 @@ export class AppComponent {
       "fee": 1.15,
       "GST": 18,
       "RentalDocs": 50000,
-      "link": "https://play.google.com/store/apps/details?id=com.dreamplug.androidapp&pli=1"
+      "link": "https://play.google.com/store/apps/details?id=com.freecharge.android"
     },
     {
       "id": 8,
@@ -104,7 +104,7 @@ export class AppComponent {
       "fee": 2,
       "GST": 18,
       "RentalDocs": 50000,
-      "link": "https://play.google.com/store/apps/details?id=com.dreamplug.androidapp&pli=1"
+      "link": "https://play.google.com/store/apps/details?id=com.mobikwik_new"
     },
   ];
 
@@ -125,12 +125,7 @@ export class AppComponent {
     dialogRef.afterClosed().subscribe();
   }
 
-  testURL(name : String) : any {
-    console.log(name);
-    console.log(this.RentpayData[3].link);
-   this.url = this.RentpayData[3].link;
-    if(name === "CRED") {
-      this.router.navigateByUrl(this.RentpayData[3].link);
-     }
+  OpenSiteURL(url:any) : any {
+    window.open(url, '_blank');
   }
 }
