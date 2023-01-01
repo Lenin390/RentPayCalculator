@@ -6,53 +6,6 @@
 </div>
 </div>
 
-<!-- <div class="container-fluid rentPay_working charge_calculator_main_section">
-<div  class="row padding-20 margin-0">
-  <div  class="col-md-6 border-right-black-2">
-    <p  class="charges_heading">DETAILS</p>
-    <div  class="margin-top-30">
-      <form >
-        <div  class="row">
-          <div  class="col-md-6">
-            <mat-form-field >
-              <div class="mat-form-field-wrapper">
-                <div class="mat-form-field-flex">
-                  <div class="mat-form-field-infix">
-                    <mat-label class="mat-form-field-label">Enter Rent Amount</mat-label>
-                    <input type="text"
-                      class="mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored"
-                      name="amount" matInput [formControl]="amountFormControl" [errorStateMatcher]="matcher"
-                      aria-describedby="mat-error-0" id="mat-input-0">
-                      <span class="mat-form-field-label-wrapper ">
-                        <label class="mat-form-field-label mat-empty mat-form-field-empty"
-                        id="mat-form-field-label-1" for="mat-input-0" aria-owns="mat-input-0">
-                        <span aria-hidden="true" class="mat-placeholder-required mat-form-field-required-marker  ">Enter Rent Amount*</span>
-                        </label>
-                      </span>
-                  </div>
-                </div>
-                <div class="mat-form-field-underline  "><span
-                    class="mat-form-field-ripple "></span></div>
-                <div class="mat-form-field-subscript-wrapper ">
-                  <div class=" " style="opacity: 1; transform: translateY(0%);">
-                    <div class="mat-form-field-hint-spacer"></div>
-                    <mat-hint class="mat-hint mat-form-field-hint-end" id="mat-hint-0">0 / 8</mat-hint>
-                    <mat-error role="alert" class="mat-error  " id="mat-error-0">Please enter a valid rent amount
-                      without decimal</mat-error>
-                  </div>
-                </div>
-              </div>
-            </mat-form-field></div>
-        </div>
-      </form>
-    </div>
-  </div>
-  <div  class="col-md-6">
-    <p  class="charges_heading">CHARGES</p>
-    <div  class="col-md-12 margin-top-30"></div>
-  </div>
-</div>
-</div> -->
 <div class="container-fluid rentPay_working charge_calculator_main_section">
   <div class="row padding-20 margin-0">
     <div class="col-md-6 border-right-black-2">
@@ -101,25 +54,25 @@
             <div class="prc-tbl__row-wrpr">
               <div class="width-30">
                 <img alt={{site.slug}} title={{site.name}} [src]="site.logo" decoding="async" data-nimg="true"
-                  class="img"  [ngClass]="site.name==='CRED' ? 'bg-black img' : 'img'">
+                  class="img" [ngClass]="site.name==='CRED' ? 'bg-black img' : 'img'">
               </div>
               <div class="width-20">
                 <div><h3>₹{{Rentamount + ((Rentamount) * (site.fee/100)) + ((Rentamount) * (site.fee/100)*
                   (site.GST/100))}}</h3>
                 <span (click)="openDialog(Rentamount,site.fee,site.GST)" class="col-blue">Details<mat-icon style="padding-top: 8px;">keyboard_arrow_down</mat-icon></span></div>
-                <!-- <ng-template #detailedcharges>
-                  <h4>{{'Convenience fee of ₹' + (((Rentamount) * (site.fee/100)) + ((Rentamount) * (site.fee/100)* (site.GST/100))) + 'inclusive of GST will be charged for this Rent Amount' }}</h4>
-                  <div class="prc-box prc-tbl--fullcards ">
-                    <div>Base amount: {{Rentamount}}</div>
-                    <div>Convenience fee : {{(Rentamount) * (site.fee/100)}}</div>
-                    <div>GST: {{(Rentamount) * (site.fee/100)* (site.GST/100)}}</div>
-                    <div><strong>Total Payable Amount: {{Rentamount + ((Rentamount) * (site.fee/100)) + ((Rentamount) * (site.fee/100)* (site.GST/100))}}</strong></div>
-                  </div>
-                </ng-template> -->
+               
               </div>
               <div class="width-20 d-flex">
                 <h5 style="width: 80%;">Rental Aggrement Required:
                   <strong>{{(Rentamount > site.RentalDocs) ?'YES' : 'NO'}}</strong> </h5>
+              </div>
+              
+              <div>
+                <button mat-button="" type="button" id="calculator-charges-button"
+                  class="mat-focus-indicator buttonClass button-stepper-next mat-button mat-button-base"
+                  (click)="OpenSiteURL(site.link)">
+                  <span class="mat-button-wrapper">PAY</span>
+                </button>
               </div>
             </div>
           </div>
