@@ -41,7 +41,7 @@ export class AppComponent {
       "name": "NoBroker",
       "slug": "nobroker",
       "logo": "https://assets.nobroker.in/static/img/logos/nb_logo_new_trans.svg",
-      "fee": 1,
+      "fee": 1.1,
       "GST": 18,
       "RentalDocs": 50000,
       "link": "https://play.google.com/store/apps/details?id=com.nobroker.app&gl=US"
@@ -51,7 +51,7 @@ export class AppComponent {
       "name": "CRED",
       "slug": "cred",
       "logo": "https://web-images.credcdn.in/_next/assets/images/home-page/cred-logo-horizontal.png",
-      "fee": 1.55,
+      "fee": 1.525,
       "GST": 18,
       "RentalDocs": 8333.33,
       "link": "https://play.google.com/store/apps/details?id=com.dreamplug.androidapp&pli=1"
@@ -61,7 +61,7 @@ export class AppComponent {
       "name": "MagicBricks",
       "slug": "magicbricks",
       "logo": "https://img.staticmb.com/mbcontent/images/uploads/2015/7/MB%20Logo.JPG",
-      "fee": 0,
+      "fee": 1.49,
       "GST": 18,
       "RentalDocs": 50000,
       "link": "https://play.google.com/store/apps/details?id=com.timesgroup.magicbricks"
@@ -71,7 +71,7 @@ export class AppComponent {
       "name": "Paytm",
       "slug": "paytm",
       "logo": "https://assetscdn1.paytm.com/images/catalog/view/310944/1654517453942.png",
-      "fee": 1.75,
+      "fee": 1.865,
       "GST": 18,
       "RentalDocs": 50000,
       "link": "https://play.google.com/store/apps/details?id=net.one97.paytm"
@@ -81,7 +81,7 @@ export class AppComponent {
       "name": "PhonePe",
       "slug": "phone",
       "logo": "https://www.logo.wine/a/logo/PhonePe/PhonePe-Logo.wine.svg",
-      "fee": 1.70,
+      "fee": 1.695,
       "GST": 18,
       "RentalDocs": 50000,
       "link": "https://play.google.com/store/apps/details?id=com.phonepe.app"

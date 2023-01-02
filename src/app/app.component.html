@@ -49,7 +49,7 @@
     <div class="col-md-6">
       <p class="charges_heading">CHARGES</p>
       <div class="col-md-12 margin-top-30">
-        <ng-container *ngFor="let site of RentpayData">
+        <ng-container *ngFor="let site of RentpayData; index as i">
           <div class="prc-box prc-tbl--fullcards ">
             <div class="prc-tbl__row-wrpr">
               <div class="width-30">
@@ -58,7 +58,7 @@
               </div>
               <div class="width-20">
                 <div><h3>₹{{Rentamount + ((Rentamount) * (site.fee/100)) + ((Rentamount) * (site.fee/100)*
-                  (site.GST/100))}}</h3>
+                  (site.GST/100)) | number:'1.0-0'}}</h3>
                 <span (click)="openDialog(Rentamount,site.fee,site.GST)" class="col-blue">Details<mat-icon style="padding-top: 8px;">keyboard_arrow_down</mat-icon></span></div>
                
               </div>
